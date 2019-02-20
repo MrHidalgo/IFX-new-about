@@ -435,16 +435,41 @@ picture {
       -ms-flex-align: center;
           align-items: center;
   min-height: 100vh;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 75px;
+  padding-bottom: 75px;
 }
 
-/* line 10, src/scss/_components/_simple.scss */
+@media screen and (min-width: 320px) {
+  /* line 3, src/scss/_components/_simple.scss */
+  .a-simple {
+    padding-top: -webkit-calc(75px + 25 * (100vw - 320px) / 1280);
+    padding-top: calc(75px + 25 * (100vw - 320px) / 1280);
+    padding-bottom: -webkit-calc(75px + 25 * (100vw - 320px) / 1280);
+    padding-bottom: calc(75px + 25 * (100vw - 320px) / 1280);
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  /* line 3, src/scss/_components/_simple.scss */
+  .a-simple {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 3, src/scss/_components/_simple.scss */
+  .a-simple {
+    min-height: 0;
+  }
+}
+
+/* line 15, src/scss/_components/_simple.scss */
 .a-simple .c-grid {
   max-width: 1670px;
 }
 
-/* line 14, src/scss/_components/_simple.scss */
+/* line 19, src/scss/_components/_simple.scss */
 .a-simple__wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -456,12 +481,36 @@ picture {
           align-items: center;
 }
 
-/* line 18, src/scss/_components/_simple.scss */
+@media screen and (max-width: 767px) {
+  /* line 19, src/scss/_components/_simple.scss */
+  .a-simple__wrapper {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+}
+
+/* line 26, src/scss/_components/_simple.scss */
 .a-simple__wrapper-left {
   width: 813px;
 }
 
-/* line 22, src/scss/_components/_simple.scss */
+@media screen and (max-width: 1439px) {
+  /* line 26, src/scss/_components/_simple.scss */
+  .a-simple__wrapper-left {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 26, src/scss/_components/_simple.scss */
+  .a-simple__wrapper-left {
+    width: 100%;
+    padding-bottom: 50px;
+  }
+}
+
+/* line 37, src/scss/_components/_simple.scss */
 .a-simple__wrapper-right {
   width: 100%;
   max-width: -webkit-calc(100% - 813px);
@@ -469,36 +518,119 @@ picture {
   padding-left: 167px;
 }
 
-/* line 29, src/scss/_components/_simple.scss */
+@media screen and (max-width: 1439px) {
+  /* line 37, src/scss/_components/_simple.scss */
+  .a-simple__wrapper-right {
+    max-width: 50%;
+    padding-left: 100px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  /* line 37, src/scss/_components/_simple.scss */
+  .a-simple__wrapper-right {
+    padding-left: 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 37, src/scss/_components/_simple.scss */
+  .a-simple__wrapper-right {
+    max-width: 100%;
+    padding-left: 0;
+  }
+}
+
+/* line 55, src/scss/_components/_simple.scss */
 .a-simple__title {
   font-weight: bold;
-  font-size: 140px;
   color: #000000;
   letter-spacing: 0;
   line-height: 0.71429;
+  font-size: 60px;
 }
 
-/* line 37, src/scss/_components/_simple.scss */
+@media screen and (min-width: 320px) {
+  /* line 55, src/scss/_components/_simple.scss */
+  .a-simple__title {
+    font-size: -webkit-calc(60px + 80 * (100vw - 320px) / 1280);
+    font-size: calc(60px + 80 * (100vw - 320px) / 1280);
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  /* line 55, src/scss/_components/_simple.scss */
+  .a-simple__title {
+    font-size: 140px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  /* line 55, src/scss/_components/_simple.scss */
+  .a-simple__title {
+    line-height: 1;
+  }
+}
+
+/* line 67, src/scss/_components/_simple.scss */
 .a-simple__subtitle {
   font-weight: bold;
-  font-size: 80px;
   color: #000000;
   letter-spacing: 0;
   line-height: 1.25;
+  font-size: 40px;
 }
 
-/* line 45, src/scss/_components/_simple.scss */
+@media screen and (min-width: 320px) {
+  /* line 67, src/scss/_components/_simple.scss */
+  .a-simple__subtitle {
+    font-size: -webkit-calc(40px + 40 * (100vw - 320px) / 1280);
+    font-size: calc(40px + 40 * (100vw - 320px) / 1280);
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  /* line 67, src/scss/_components/_simple.scss */
+  .a-simple__subtitle {
+    font-size: 80px;
+  }
+}
+
+/* line 76, src/scss/_components/_simple.scss */
 .a-simple__desc {
   font-weight: 500;
   font-size: 32px;
   color: #1B2234;
   letter-spacing: 0;
   line-height: 1.3125;
+  font-size: 24px;
 }
 
-/* line 52, src/scss/_components/_simple.scss */
+@media screen and (min-width: 320px) {
+  /* line 76, src/scss/_components/_simple.scss */
+  .a-simple__desc {
+    font-size: -webkit-calc(24px + 8 * (100vw - 320px) / 1046);
+    font-size: calc(24px + 8 * (100vw - 320px) / 1046);
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  /* line 76, src/scss/_components/_simple.scss */
+  .a-simple__desc {
+    font-size: 32px;
+  }
+}
+
+/* line 84, src/scss/_components/_simple.scss */
 .a-simple__desc--pb {
   padding-bottom: 50px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 84, src/scss/_components/_simple.scss */
+  .a-simple__desc--pb {
+    padding-bottom: 30px;
+  }
 }
 
 /* line 3, src/scss/_components/_values.scss */

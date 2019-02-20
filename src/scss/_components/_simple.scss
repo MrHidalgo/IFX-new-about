@@ -4,8 +4,13 @@
   display: flex;
   align-items: center;
   min-height: 100vh;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  //padding-top: 100px;
+  //padding-bottom: 100px;
+  @include fluid(padding-top padding-bottom, 320px, 1600px, 75px, 100px);
+
+  @include adaptive(767) {
+    min-height: 0;
+  }
 
   .c-grid {
     max-width: 1670px;
@@ -14,32 +19,58 @@
   &__wrapper {
     display: flex;
     align-items: center;
+    @include adaptive(767) {
+      flex-wrap: wrap;
+    }
 
     &-left {
       width: 813px;
+      @include adaptive(1439) {
+        width: 50%;
+      }
+      @include adaptive(767) {
+        width: 100%;
+        padding-bottom: 50px;
+      }
     }
 
     &-right {
       width: 100%;
       max-width: calc(100% - 813px);
       padding-left: 167px;
+      @include adaptive(1439) {
+        max-width: 50%;
+        padding-left: 100px;
+      }
+      @include adaptive(991) {
+        padding-left: 50px;
+      }
+      @include adaptive(767) {
+        max-width: 100%;
+        padding-left: 0;
+      }
     }
   }
 
   &__title {
     font-weight: bold;
-    font-size: 140px;
+    //font-size: 140px;
     color: #000000;
     letter-spacing: 0;
     line-height: line-height-convert(100, 140);
+    @include fluid(font-size, 320px, 1600px, 60px, 140px);
+    @include adaptive(991) {
+      line-height: 1;
+    }
   }
 
   &__subtitle {
     font-weight: bold;
-    font-size: 80px;
+    //font-size: 80px;
     color: #000000;
     letter-spacing: 0;
     line-height: line-height-convert(100, 80);
+    @include fluid(font-size, 320px, 1600px, 40px, 80px);
   }
 
   &__desc {
@@ -48,9 +79,13 @@
     color: #1B2234;
     letter-spacing: 0;
     line-height: line-height-convert(42, 32);
+    @include fluid(font-size, 320px, 1366px, 24px, 32px);
 
     &--pb {
       padding-bottom: 50px;
+      @include adaptive(767) {
+        padding-bottom: 30px;
+      }
     }
   }
 }
