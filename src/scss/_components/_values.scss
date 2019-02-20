@@ -4,9 +4,12 @@
   display: flex;
   align-items: center;
   min-height: 100vh;
-  padding-top: 100px;
-  padding-bottom: 100px;
   background-color: #F2F2F2;
+  @include fluid(padding-top padding-bottom, 320px, 1600px, 75px, 100px);
+
+  @include adaptive(767) {
+    min-height: 0;
+  }
 
   .c-grid {
     max-width: 1670px;
@@ -15,23 +18,41 @@
   &__wrapper {
     display: flex;
     align-items: center;
+    @include adaptive(767) {
+      flex-wrap: wrap;
+    }
 
     &-left,
     &-right {
       width: 50%;
+      @include adaptive(767) {
+        width: 100%;
+      }
     }
 
     &-right {
       padding-left: 275px;
+      @include adaptive(1599) {
+        padding-left: 100px;
+      }
+      @include adaptive(1365) {
+        padding-left: 50px;
+      }
+      @include adaptive(991) {
+        padding-left: 0;
+      }
+      @include adaptive(767) {
+        padding-top: 50px;
+      }
     }
   }
 
   &__title {
     font-weight: bold;
-    font-size: 140px;
     color: #000000;
     letter-spacing: 0;
-    line-height: line-height-convert(140, 100);
+    line-height: 1;
+    @include fluid(font-size, 320px, 1600px, 60px, 140px);
   }
 
   &__list {
@@ -49,10 +70,17 @@
       > div {
         &:nth-of-type(1) {
           width: 110px;
+          @include adaptive(767) {
+            width: 85px;
+          }
         }
+
         &:nth-of-type(2) {
           width: 100%;
           max-width: calc(100% - 110px);
+          @include adaptive(767) {
+            max-width: calc(100% - 85px);
+          }
         }
       }
     }

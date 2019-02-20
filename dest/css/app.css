@@ -464,12 +464,12 @@ picture {
   }
 }
 
-/* line 15, src/scss/_components/_simple.scss */
+/* line 13, src/scss/_components/_simple.scss */
 .a-simple .c-grid {
   max-width: 1670px;
 }
 
-/* line 19, src/scss/_components/_simple.scss */
+/* line 17, src/scss/_components/_simple.scss */
 .a-simple__wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -482,7 +482,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 19, src/scss/_components/_simple.scss */
+  /* line 17, src/scss/_components/_simple.scss */
   .a-simple__wrapper {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
@@ -490,27 +490,27 @@ picture {
   }
 }
 
-/* line 26, src/scss/_components/_simple.scss */
+/* line 24, src/scss/_components/_simple.scss */
 .a-simple__wrapper-left {
   width: 813px;
 }
 
 @media screen and (max-width: 1439px) {
-  /* line 26, src/scss/_components/_simple.scss */
+  /* line 24, src/scss/_components/_simple.scss */
   .a-simple__wrapper-left {
     width: 50%;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 26, src/scss/_components/_simple.scss */
+  /* line 24, src/scss/_components/_simple.scss */
   .a-simple__wrapper-left {
     width: 100%;
     padding-bottom: 50px;
   }
 }
 
-/* line 37, src/scss/_components/_simple.scss */
+/* line 35, src/scss/_components/_simple.scss */
 .a-simple__wrapper-right {
   width: 100%;
   max-width: -webkit-calc(100% - 813px);
@@ -519,7 +519,7 @@ picture {
 }
 
 @media screen and (max-width: 1439px) {
-  /* line 37, src/scss/_components/_simple.scss */
+  /* line 35, src/scss/_components/_simple.scss */
   .a-simple__wrapper-right {
     max-width: 50%;
     padding-left: 100px;
@@ -527,21 +527,21 @@ picture {
 }
 
 @media screen and (max-width: 991px) {
-  /* line 37, src/scss/_components/_simple.scss */
+  /* line 35, src/scss/_components/_simple.scss */
   .a-simple__wrapper-right {
     padding-left: 50px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 37, src/scss/_components/_simple.scss */
+  /* line 35, src/scss/_components/_simple.scss */
   .a-simple__wrapper-right {
     max-width: 100%;
     padding-left: 0;
   }
 }
 
-/* line 55, src/scss/_components/_simple.scss */
+/* line 53, src/scss/_components/_simple.scss */
 .a-simple__title {
   font-weight: bold;
   color: #000000;
@@ -551,7 +551,7 @@ picture {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 55, src/scss/_components/_simple.scss */
+  /* line 53, src/scss/_components/_simple.scss */
   .a-simple__title {
     font-size: -webkit-calc(60px + 80 * (100vw - 320px) / 1280);
     font-size: calc(60px + 80 * (100vw - 320px) / 1280);
@@ -559,20 +559,20 @@ picture {
 }
 
 @media screen and (min-width: 1600px) {
-  /* line 55, src/scss/_components/_simple.scss */
+  /* line 53, src/scss/_components/_simple.scss */
   .a-simple__title {
     font-size: 140px;
   }
 }
 
 @media screen and (max-width: 991px) {
-  /* line 55, src/scss/_components/_simple.scss */
+  /* line 53, src/scss/_components/_simple.scss */
   .a-simple__title {
     line-height: 1;
   }
 }
 
-/* line 67, src/scss/_components/_simple.scss */
+/* line 64, src/scss/_components/_simple.scss */
 .a-simple__subtitle {
   font-weight: bold;
   color: #000000;
@@ -582,7 +582,7 @@ picture {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 67, src/scss/_components/_simple.scss */
+  /* line 64, src/scss/_components/_simple.scss */
   .a-simple__subtitle {
     font-size: -webkit-calc(40px + 40 * (100vw - 320px) / 1280);
     font-size: calc(40px + 40 * (100vw - 320px) / 1280);
@@ -590,13 +590,13 @@ picture {
 }
 
 @media screen and (min-width: 1600px) {
-  /* line 67, src/scss/_components/_simple.scss */
+  /* line 64, src/scss/_components/_simple.scss */
   .a-simple__subtitle {
     font-size: 80px;
   }
 }
 
-/* line 76, src/scss/_components/_simple.scss */
+/* line 72, src/scss/_components/_simple.scss */
 .a-simple__desc {
   font-weight: 500;
   font-size: 32px;
@@ -607,7 +607,7 @@ picture {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 76, src/scss/_components/_simple.scss */
+  /* line 72, src/scss/_components/_simple.scss */
   .a-simple__desc {
     font-size: -webkit-calc(24px + 8 * (100vw - 320px) / 1046);
     font-size: calc(24px + 8 * (100vw - 320px) / 1046);
@@ -615,19 +615,19 @@ picture {
 }
 
 @media screen and (min-width: 1366px) {
-  /* line 76, src/scss/_components/_simple.scss */
+  /* line 72, src/scss/_components/_simple.scss */
   .a-simple__desc {
     font-size: 32px;
   }
 }
 
-/* line 84, src/scss/_components/_simple.scss */
+/* line 80, src/scss/_components/_simple.scss */
 .a-simple__desc--pb {
   padding-bottom: 50px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 84, src/scss/_components/_simple.scss */
+  /* line 80, src/scss/_components/_simple.scss */
   .a-simple__desc--pb {
     padding-bottom: 30px;
   }
@@ -644,17 +644,42 @@ picture {
       -ms-flex-align: center;
           align-items: center;
   min-height: 100vh;
-  padding-top: 100px;
-  padding-bottom: 100px;
   background-color: #F2F2F2;
+  padding-top: 75px;
+  padding-bottom: 75px;
 }
 
-/* line 11, src/scss/_components/_values.scss */
+@media screen and (min-width: 320px) {
+  /* line 3, src/scss/_components/_values.scss */
+  .a-values {
+    padding-top: -webkit-calc(75px + 25 * (100vw - 320px) / 1280);
+    padding-top: calc(75px + 25 * (100vw - 320px) / 1280);
+    padding-bottom: -webkit-calc(75px + 25 * (100vw - 320px) / 1280);
+    padding-bottom: calc(75px + 25 * (100vw - 320px) / 1280);
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  /* line 3, src/scss/_components/_values.scss */
+  .a-values {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 3, src/scss/_components/_values.scss */
+  .a-values {
+    min-height: 0;
+  }
+}
+
+/* line 14, src/scss/_components/_values.scss */
 .a-values .c-grid {
   max-width: 1670px;
 }
 
-/* line 15, src/scss/_components/_values.scss */
+/* line 18, src/scss/_components/_values.scss */
 .a-values__wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -666,26 +691,85 @@ picture {
           align-items: center;
 }
 
-/* line 19, src/scss/_components/_values.scss */
+@media screen and (max-width: 767px) {
+  /* line 18, src/scss/_components/_values.scss */
+  .a-values__wrapper {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+}
+
+/* line 25, src/scss/_components/_values.scss */
 .a-values__wrapper-left, .a-values__wrapper-right {
   width: 50%;
 }
 
-/* line 24, src/scss/_components/_values.scss */
+@media screen and (max-width: 767px) {
+  /* line 25, src/scss/_components/_values.scss */
+  .a-values__wrapper-left, .a-values__wrapper-right {
+    width: 100%;
+  }
+}
+
+/* line 33, src/scss/_components/_values.scss */
 .a-values__wrapper-right {
   padding-left: 275px;
 }
 
-/* line 29, src/scss/_components/_values.scss */
-.a-values__title {
-  font-weight: bold;
-  font-size: 140px;
-  color: #000000;
-  letter-spacing: 0;
-  line-height: 1.4;
+@media screen and (max-width: 1599px) {
+  /* line 33, src/scss/_components/_values.scss */
+  .a-values__wrapper-right {
+    padding-left: 100px;
+  }
 }
 
-/* line 37, src/scss/_components/_values.scss */
+@media screen and (max-width: 1365px) {
+  /* line 33, src/scss/_components/_values.scss */
+  .a-values__wrapper-right {
+    padding-left: 50px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  /* line 33, src/scss/_components/_values.scss */
+  .a-values__wrapper-right {
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 33, src/scss/_components/_values.scss */
+  .a-values__wrapper-right {
+    padding-top: 50px;
+  }
+}
+
+/* line 50, src/scss/_components/_values.scss */
+.a-values__title {
+  font-weight: bold;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: 1;
+  font-size: 60px;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 50, src/scss/_components/_values.scss */
+  .a-values__title {
+    font-size: -webkit-calc(60px + 80 * (100vw - 320px) / 1280);
+    font-size: calc(60px + 80 * (100vw - 320px) / 1280);
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  /* line 50, src/scss/_components/_values.scss */
+  .a-values__title {
+    font-size: 140px;
+  }
+}
+
+/* line 58, src/scss/_components/_values.scss */
 .a-values__list {
   display: -webkit-box;
   display: -webkit-flex;
@@ -698,7 +782,7 @@ picture {
           flex-direction: column;
 }
 
-/* line 41, src/scss/_components/_values.scss */
+/* line 62, src/scss/_components/_values.scss */
 .a-values__list-item {
   display: -webkit-box;
   display: -webkit-flex;
@@ -707,24 +791,39 @@ picture {
   padding-bottom: 58px;
 }
 
-/* line 45, src/scss/_components/_values.scss */
+/* line 66, src/scss/_components/_values.scss */
 .a-values__list-item:last-of-type {
   padding-bottom: 0;
 }
 
-/* line 50, src/scss/_components/_values.scss */
+/* line 71, src/scss/_components/_values.scss */
 .a-values__list-item > div:nth-of-type(1) {
   width: 110px;
 }
 
-/* line 53, src/scss/_components/_values.scss */
+@media screen and (max-width: 767px) {
+  /* line 71, src/scss/_components/_values.scss */
+  .a-values__list-item > div:nth-of-type(1) {
+    width: 85px;
+  }
+}
+
+/* line 78, src/scss/_components/_values.scss */
 .a-values__list-item > div:nth-of-type(2) {
   width: 100%;
   max-width: -webkit-calc(100% - 110px);
   max-width: calc(100% - 110px);
 }
 
-/* line 60, src/scss/_components/_values.scss */
+@media screen and (max-width: 767px) {
+  /* line 78, src/scss/_components/_values.scss */
+  .a-values__list-item > div:nth-of-type(2) {
+    max-width: -webkit-calc(100% - 85px);
+    max-width: calc(100% - 85px);
+  }
+}
+
+/* line 88, src/scss/_components/_values.scss */
 .a-values__list-circle {
   overflow: hidden;
   display: -webkit-box;
@@ -746,7 +845,7 @@ picture {
   background-color: #F3323D;
 }
 
-/* line 71, src/scss/_components/_values.scss */
+/* line 99, src/scss/_components/_values.scss */
 .a-values__list-title {
   padding-bottom: 16px;
   text-transform: uppercase;
@@ -756,7 +855,7 @@ picture {
   letter-spacing: 0;
 }
 
-/* line 80, src/scss/_components/_values.scss */
+/* line 108, src/scss/_components/_values.scss */
 .a-values__list-desc {
   font-family: 'SF Pro Text', sans-serif;
   font-size: 18px;
