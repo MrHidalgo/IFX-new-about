@@ -236,9 +236,49 @@ picture {
   padding-left: 15px;
 }
 
+/* line 20, src/scss/_shared/_grid.scss */
+.c-grid {
+  max-width: 100%;
+}
+
 /* line 27, src/scss/_shared/_grid.scss */
 .c-grid-fluid {
   max-width: 100%;
+}
+
+@media screen and (min-width: 576px) {
+  /* line 35, src/scss/_shared/_grid.scss */
+  .c-grid {
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  /* line 35, src/scss/_shared/_grid.scss */
+  .c-grid {
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  /* line 35, src/scss/_shared/_grid.scss */
+  .c-grid {
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* line 35, src/scss/_shared/_grid.scss */
+  .c-grid {
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  /* line 35, src/scss/_shared/_grid.scss */
+  .c-grid {
+    max-width: 100%;
+  }
 }
 
 /* line 3, src/scss/_shared/_iconSVG.scss */
@@ -259,37 +299,129 @@ picture {
 /* line 3, src/scss/_components/_main.scss */
 .a-main {
   min-height: 100vh;
-  padding-top: 279px;
   padding-bottom: 100px;
   background-image: url("../img/img-main-bg.jpg");
   background-repeat: no-repeat;
   background-position: bottom right;
+  padding-top: 140px;
+  padding-bottom: 75px;
 }
 
-/* line 11, src/scss/_components/_main.scss */
+@media screen and (min-width: 320px) {
+  /* line 3, src/scss/_components/_main.scss */
+  .a-main {
+    padding-top: -webkit-calc(140px + 139 * (100vw - 320px) / 1280);
+    padding-top: calc(140px + 139 * (100vw - 320px) / 1280);
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  /* line 3, src/scss/_components/_main.scss */
+  .a-main {
+    padding-top: 279px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  /* line 3, src/scss/_components/_main.scss */
+  .a-main {
+    padding-bottom: -webkit-calc(75px + 25 * (100vw - 320px) / 1280);
+    padding-bottom: calc(75px + 25 * (100vw - 320px) / 1280);
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  /* line 3, src/scss/_components/_main.scss */
+  .a-main {
+    padding-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 3, src/scss/_components/_main.scss */
+  .a-main {
+    min-height: 0;
+    -webkit-background-size: contain;
+            background-size: contain;
+  }
+}
+
+/* line 18, src/scss/_components/_main.scss */
 .a-main .c-grid {
   max-width: 1350px;
 }
 
-/* line 15, src/scss/_components/_main.scss */
+/* line 22, src/scss/_components/_main.scss */
 .a-main__title {
-  padding-bottom: 60px;
-  font-size: 100px;
   font-weight: bold;
   color: #000000;
   letter-spacing: 0;
   line-height: 1.1;
+  padding-bottom: 30px;
+  font-size: 50px;
 }
 
-/* line 24, src/scss/_components/_main.scss */
+@media screen and (min-width: 320px) {
+  /* line 22, src/scss/_components/_main.scss */
+  .a-main__title {
+    padding-bottom: -webkit-calc(30px + 30 * (100vw - 320px) / 1280);
+    padding-bottom: calc(30px + 30 * (100vw - 320px) / 1280);
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  /* line 22, src/scss/_components/_main.scss */
+  .a-main__title {
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  /* line 22, src/scss/_components/_main.scss */
+  .a-main__title {
+    font-size: -webkit-calc(50px + 50 * (100vw - 320px) / 1280);
+    font-size: calc(50px + 50 * (100vw - 320px) / 1280);
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  /* line 22, src/scss/_components/_main.scss */
+  .a-main__title {
+    font-size: 100px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 30, src/scss/_components/_main.scss */
+  .a-main__title br {
+    display: none;
+  }
+}
+
+/* line 37, src/scss/_components/_main.scss */
 .a-main__subtitle {
   width: 100%;
   max-width: 535px;
   font-weight: bold;
-  font-size: 60px;
   color: #F40830;
   letter-spacing: 0;
   line-height: 1.16667;
+  font-size: 38px;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 37, src/scss/_components/_main.scss */
+  .a-main__subtitle {
+    font-size: -webkit-calc(38px + 22 * (100vw - 320px) / 1280);
+    font-size: calc(38px + 22 * (100vw - 320px) / 1280);
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  /* line 37, src/scss/_components/_main.scss */
+  .a-main__subtitle {
+    font-size: 60px;
+  }
 }
 
 /* line 3, src/scss/_components/_simple.scss */
