@@ -1,0 +1,48 @@
+// SECTION based :: START
+
+.a-based {
+  min-height: 100vh;
+  padding-top: 100px;
+  padding-bottom: 95px;
+  background-color: #212121;
+
+  .c-grid {
+    max-width: 1670px;
+  }
+
+  &__title {
+    padding-bottom: 20px;
+    font-weight: bold;
+    font-size: 60px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: line-height-convert(100, 60);
+  }
+
+  &__text {
+    width: 100%;
+    max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'SF Pro Text', sans-serif;
+    font-size: 18px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: line-height-convert(26, 18);
+  }
+
+  &__img {
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+      mix-blend-mode: lighten;
+    }
+  }
+}
+
+// SECTION based :: END

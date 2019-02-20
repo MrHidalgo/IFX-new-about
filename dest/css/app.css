@@ -468,4 +468,52 @@ picture {
   line-height: 26px;
 }
 
+/* line 3, src/scss/_components/_based.scss */
+.a-based {
+  min-height: 100vh;
+  padding-top: 100px;
+  padding-bottom: 95px;
+  background-color: #212121;
+}
+
+/* line 9, src/scss/_components/_based.scss */
+.a-based .c-grid {
+  max-width: 1670px;
+}
+
+/* line 13, src/scss/_components/_based.scss */
+.a-based__title {
+  padding-bottom: 20px;
+  font-weight: bold;
+  font-size: 60px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 1.66667;
+}
+
+/* line 23, src/scss/_components/_based.scss */
+.a-based__text {
+  width: 100%;
+  max-width: 1120px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'SF Pro Text', sans-serif;
+  font-size: 18px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 1.44444;
+}
+
+/* line 37, src/scss/_components/_based.scss */
+.a-based__img img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  mix-blend-mode: lighten;
+}
+
 /*# sourceMappingURL=maps/app.css.map */
