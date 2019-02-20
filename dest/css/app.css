@@ -1,4 +1,22 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800|Rajdhani:400,500,600,700");
+/* line 1, src/scss/_generated/_spriteSVG.scss */
+.icon-a-values-0 {
+  width: 28px;
+  height: 21px;
+}
+
+/* line 5, src/scss/_generated/_spriteSVG.scss */
+.icon-a-values-1 {
+  width: 24px;
+  height: 28px;
+}
+
+/* line 9, src/scss/_generated/_spriteSVG.scss */
+.icon-a-values-2 {
+  width: 20px;
+  height: 26px;
+}
+
 @font-face {
   font-family: "SFUIText";
   src: url("../fonts/SFUIText-Regular.woff2") format("woff2"), url("../fonts/SFUIText-Regular.woff") format("woff"), url("../fonts/SFUIText-Regular.ttf") format("truetype");
@@ -197,6 +215,257 @@ picture {
 /* line 27, src/scss/_shared/_grid.scss */
 .c-grid-fluid {
   max-width: 100%;
+}
+
+/* line 3, src/scss/_shared/_iconSVG.scss */
+.icon-svg {
+  display: inline-block;
+  fill: currentColor;
+}
+
+/* line 3, src/scss/_components/_main.scss */
+.a-main {
+  min-height: 100vh;
+  padding-top: 279px;
+  padding-bottom: 100px;
+  background-image: url("../img/img-main-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+/* line 11, src/scss/_components/_main.scss */
+.a-main .c-grid {
+  max-width: 1350px;
+}
+
+/* line 15, src/scss/_components/_main.scss */
+.a-main__title {
+  padding-bottom: 60px;
+  font-size: 100px;
+  font-weight: bold;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: 1.1;
+}
+
+/* line 24, src/scss/_components/_main.scss */
+.a-main__subtitle {
+  width: 100%;
+  max-width: 535px;
+  font-weight: bold;
+  font-size: 60px;
+  color: #F40830;
+  letter-spacing: 0;
+  line-height: 1.16667;
+}
+
+/* line 3, src/scss/_components/_simple.scss */
+.a-simple {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+/* line 10, src/scss/_components/_simple.scss */
+.a-simple .c-grid {
+  max-width: 1670px;
+}
+
+/* line 14, src/scss/_components/_simple.scss */
+.a-simple__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 18, src/scss/_components/_simple.scss */
+.a-simple__wrapper-left {
+  width: 813px;
+}
+
+/* line 22, src/scss/_components/_simple.scss */
+.a-simple__wrapper-right {
+  width: 100%;
+  max-width: -webkit-calc(100% - 813px);
+  max-width: calc(100% - 813px);
+  padding-left: 167px;
+}
+
+/* line 29, src/scss/_components/_simple.scss */
+.a-simple__title {
+  font-weight: bold;
+  font-size: 140px;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: 0.71429;
+}
+
+/* line 37, src/scss/_components/_simple.scss */
+.a-simple__subtitle {
+  font-weight: bold;
+  font-size: 80px;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: 1.25;
+}
+
+/* line 45, src/scss/_components/_simple.scss */
+.a-simple__desc {
+  font-weight: 500;
+  font-size: 32px;
+  color: #1B2234;
+  letter-spacing: 0;
+  line-height: 1.3125;
+}
+
+/* line 52, src/scss/_components/_simple.scss */
+.a-simple__desc--pb {
+  padding-bottom: 50px;
+}
+
+/* line 3, src/scss/_components/_values.scss */
+.a-values {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #F2F2F2;
+}
+
+/* line 11, src/scss/_components/_values.scss */
+.a-values .c-grid {
+  max-width: 1670px;
+}
+
+/* line 15, src/scss/_components/_values.scss */
+.a-values__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 19, src/scss/_components/_values.scss */
+.a-values__wrapper-left, .a-values__wrapper-right {
+  width: 50%;
+}
+
+/* line 24, src/scss/_components/_values.scss */
+.a-values__wrapper-right {
+  padding-left: 275px;
+}
+
+/* line 29, src/scss/_components/_values.scss */
+.a-values__title {
+  font-weight: bold;
+  font-size: 140px;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: 1.4;
+}
+
+/* line 37, src/scss/_components/_values.scss */
+.a-values__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* line 41, src/scss/_components/_values.scss */
+.a-values__list-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 58px;
+}
+
+/* line 45, src/scss/_components/_values.scss */
+.a-values__list-item:last-of-type {
+  padding-bottom: 0;
+}
+
+/* line 50, src/scss/_components/_values.scss */
+.a-values__list-item > div:nth-of-type(1) {
+  width: 110px;
+}
+
+/* line 53, src/scss/_components/_values.scss */
+.a-values__list-item > div:nth-of-type(2) {
+  width: 100%;
+  max-width: -webkit-calc(100% - 110px);
+  max-width: calc(100% - 110px);
+}
+
+/* line 60, src/scss/_components/_values.scss */
+.a-values__list-circle {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 70px;
+  height: 70px;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
+  background-color: #F3323D;
+}
+
+/* line 71, src/scss/_components/_values.scss */
+.a-values__list-title {
+  padding-bottom: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  color: #000000;
+  letter-spacing: 0;
+}
+
+/* line 80, src/scss/_components/_values.scss */
+.a-values__list-desc {
+  font-family: 'SF Pro Text', sans-serif;
+  font-size: 18px;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: 26px;
 }
 
 /*# sourceMappingURL=maps/app.css.map */
