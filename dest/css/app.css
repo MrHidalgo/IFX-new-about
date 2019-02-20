@@ -867,8 +867,6 @@ picture {
 /* line 3, src/scss/_components/_based.scss */
 .a-based {
   min-height: 100vh;
-  padding-top: 100px;
-  padding-bottom: 95px;
   background-color: #212121;
   padding-top: 75px;
   padding-bottom: 65px;
@@ -911,12 +909,12 @@ picture {
   }
 }
 
-/* line 15, src/scss/_components/_based.scss */
+/* line 13, src/scss/_components/_based.scss */
 .a-based .c-grid {
   max-width: 1670px;
 }
 
-/* line 19, src/scss/_components/_based.scss */
+/* line 17, src/scss/_components/_based.scss */
 .a-based__title {
   padding-bottom: 20px;
   font-weight: bold;
@@ -927,7 +925,7 @@ picture {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 19, src/scss/_components/_based.scss */
+  /* line 17, src/scss/_components/_based.scss */
   .a-based__title {
     font-size: -webkit-calc(38px + 22 * (100vw - 320px) / 1280);
     font-size: calc(38px + 22 * (100vw - 320px) / 1280);
@@ -935,13 +933,13 @@ picture {
 }
 
 @media screen and (min-width: 1600px) {
-  /* line 19, src/scss/_components/_based.scss */
+  /* line 17, src/scss/_components/_based.scss */
   .a-based__title {
     font-size: 60px;
   }
 }
 
-/* line 28, src/scss/_components/_based.scss */
+/* line 26, src/scss/_components/_based.scss */
 .a-based__text {
   width: 100%;
   max-width: 1120px;
@@ -955,7 +953,7 @@ picture {
   line-height: 1.44444;
 }
 
-/* line 42, src/scss/_components/_based.scss */
+/* line 40, src/scss/_components/_based.scss */
 .a-based__img img {
   display: block;
   max-width: 100%;
@@ -976,27 +974,74 @@ picture {
       -ms-flex-align: center;
           align-items: center;
   min-height: 100vh;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 75px;
+  padding-bottom: 75px;
 }
 
-/* line 10, src/scss/_components/_team.scss */
+@media screen and (min-width: 320px) {
+  /* line 3, src/scss/_components/_team.scss */
+  .a-team {
+    padding-top: -webkit-calc(75px + 25 * (100vw - 320px) / 1280);
+    padding-top: calc(75px + 25 * (100vw - 320px) / 1280);
+    padding-bottom: -webkit-calc(75px + 25 * (100vw - 320px) / 1280);
+    padding-bottom: calc(75px + 25 * (100vw - 320px) / 1280);
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  /* line 3, src/scss/_components/_team.scss */
+  .a-team {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+/* line 9, src/scss/_components/_team.scss */
 .a-team .c-grid {
   max-width: 1670px;
 }
 
-/* line 16, src/scss/_components/_team.scss */
+/* line 13, src/scss/_components/_team.scss */
 .a-team__title {
-  padding-bottom: 70px;
   font-weight: bold;
-  font-size: 70px;
   color: #000000;
   letter-spacing: 0;
   text-align: center;
-  line-height: 1.14286;
+  padding-bottom: 35px;
+  font-size: 44px;
 }
 
-/* line 26, src/scss/_components/_team.scss */
+@media screen and (min-width: 320px) {
+  /* line 13, src/scss/_components/_team.scss */
+  .a-team__title {
+    padding-bottom: -webkit-calc(35px + 35 * (100vw - 320px) / 1280);
+    padding-bottom: calc(35px + 35 * (100vw - 320px) / 1280);
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  /* line 13, src/scss/_components/_team.scss */
+  .a-team__title {
+    padding-bottom: 70px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  /* line 13, src/scss/_components/_team.scss */
+  .a-team__title {
+    font-size: -webkit-calc(44px + 26 * (100vw - 320px) / 1280);
+    font-size: calc(44px + 26 * (100vw - 320px) / 1280);
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  /* line 13, src/scss/_components/_team.scss */
+  .a-team__title {
+    font-size: 70px;
+  }
+}
+
+/* line 22, src/scss/_components/_team.scss */
 .a-team__info {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1013,23 +1058,75 @@ picture {
   padding-bottom: 80px;
 }
 
-/* line 35, src/scss/_components/_team.scss */
+@media screen and (max-width: 767px) {
+  /* line 22, src/scss/_components/_team.scss */
+  .a-team__info {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+}
+
+/* line 34, src/scss/_components/_team.scss */
 .a-team__info-col {
   width: 100%;
   max-width: -webkit-calc((100% / 3) - 20px);
   max-width: calc((100% / 3) - 20px);
 }
 
-/* line 39, src/scss/_components/_team.scss */
-.a-team__info-col p {
-  padding-bottom: 33px;
-  font-weight: bold;
-  font-size: 40px;
-  color: #000000;
-  letter-spacing: 0;
+@media screen and (max-width: 767px) {
+  /* line 34, src/scss/_components/_team.scss */
+  .a-team__info-col {
+    max-width: 100%;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+  /* line 42, src/scss/_components/_team.scss */
+  .a-team__info-col:last-of-type {
+    padding-bottom: 0;
+  }
 }
 
 /* line 47, src/scss/_components/_team.scss */
+.a-team__info-col p {
+  font-weight: bold;
+  color: #000000;
+  letter-spacing: 0;
+  padding-bottom: 20px;
+  font-size: 30px;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 47, src/scss/_components/_team.scss */
+  .a-team__info-col p {
+    padding-bottom: -webkit-calc(20px + 13 * (100vw - 320px) / 1280);
+    padding-bottom: calc(20px + 13 * (100vw - 320px) / 1280);
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  /* line 47, src/scss/_components/_team.scss */
+  .a-team__info-col p {
+    padding-bottom: 33px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  /* line 47, src/scss/_components/_team.scss */
+  .a-team__info-col p {
+    font-size: -webkit-calc(30px + 10 * (100vw - 320px) / 1280);
+    font-size: calc(30px + 10 * (100vw - 320px) / 1280);
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  /* line 47, src/scss/_components/_team.scss */
+  .a-team__info-col p {
+    font-size: 40px;
+  }
+}
+
+/* line 55, src/scss/_components/_team.scss */
 .a-team__info-col span {
   font-family: 'SF Pro Text', sans-serif;
   font-size: 18px;
@@ -1038,7 +1135,7 @@ picture {
   line-height: 1.55556;
 }
 
-/* line 57, src/scss/_components/_team.scss */
+/* line 65, src/scss/_components/_team.scss */
 .a-team__slider {
   width: 100%;
   max-width: 1390px;
@@ -1046,13 +1143,13 @@ picture {
   margin-right: auto;
 }
 
-/* line 64, src/scss/_components/_team.scss */
+/* line 72, src/scss/_components/_team.scss */
 .a-team__slider .swiper-container {
   padding-left: 30px;
   padding-right: 30px;
 }
 
-/* line 69, src/scss/_components/_team.scss */
+/* line 77, src/scss/_components/_team.scss */
 .a-team__slider .swiper-slide {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1071,12 +1168,12 @@ picture {
   background-color: #000;
 }
 
-/* line 77, src/scss/_components/_team.scss */
+/* line 85, src/scss/_components/_team.scss */
 .a-team__slider .swiper-slide-info {
   padding-bottom: 20px;
 }
 
-/* line 80, src/scss/_components/_team.scss */
+/* line 88, src/scss/_components/_team.scss */
 .a-team__slider .swiper-slide-info p {
   font-family: "SF Pro Text", sans-serif;
   font-weight: bold;
@@ -1087,7 +1184,7 @@ picture {
   line-height: 22px;
 }
 
-/* line 90, src/scss/_components/_team.scss */
+/* line 98, src/scss/_components/_team.scss */
 .a-team__slider .swiper-slide-info span {
   display: block;
   opacity: 0.7;
@@ -1101,7 +1198,7 @@ picture {
   line-height: 22px;
 }
 
-/* line 106, src/scss/_components/_team.scss */
+/* line 114, src/scss/_components/_team.scss */
 .a-team__slider .swiper-button-prev, .a-team__slider .swiper-button-next {
   overflow: hidden;
   display: -webkit-box;
@@ -1133,22 +1230,22 @@ picture {
   color: #FFFFFF;
 }
 
-/* line 129, src/scss/_components/_team.scss */
+/* line 137, src/scss/_components/_team.scss */
 .a-team__slider .swiper-button-prev {
   left: 0;
 }
 
-/* line 132, src/scss/_components/_team.scss */
+/* line 140, src/scss/_components/_team.scss */
 .a-team__slider .swiper-button-prev:before {
   content: "\E001";
 }
 
-/* line 137, src/scss/_components/_team.scss */
+/* line 145, src/scss/_components/_team.scss */
 .a-team__slider .swiper-button-next {
   right: 0;
 }
 
-/* line 140, src/scss/_components/_team.scss */
+/* line 148, src/scss/_components/_team.scss */
 .a-team__slider .swiper-button-next:before {
   content: "\E001";
   -webkit-transform: rotate(-180deg);

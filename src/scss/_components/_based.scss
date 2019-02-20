@@ -2,8 +2,6 @@
 
 .a-based {
   min-height: 100vh;
-  padding-top: 100px;
-  padding-bottom: 95px;
   background-color: #212121;
   @include fluid(padding-top, 320px, 1600px, 75px, 100px);
   @include fluid(padding-bottom, 320px, 1600px, 65px, 95px);

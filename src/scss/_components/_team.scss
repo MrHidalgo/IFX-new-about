@@ -4,23 +4,19 @@
   display: flex;
   align-items: center;
   min-height: 100vh;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  @include fluid(padding-top padding-bottom, 320px, 1600px, 75px, 100px);
 
   .c-grid {
     max-width: 1670px;
   }
 
-  &__wrapper {}
-
   &__title {
-    padding-bottom: 70px;
     font-weight: bold;
-    font-size: 70px;
     color: #000000;
     letter-spacing: 0;
     text-align: center;
-    line-height: line-height-convert(80, 70);
+    @include fluid(padding-bottom, 320px, 1600px, 35px, 70px);
+    @include fluid(font-size, 320px, 1600px, 44px, 70px);
   }
 
   &__info {
@@ -31,17 +27,29 @@
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 80px;
+    @include adaptive(767) {
+      flex-wrap: wrap;
+    }
 
     &-col {
       width: 100%;
       max-width: calc((100% / 3) - 20px);
+      @include adaptive(767) {
+        max-width: 100%;
+        padding-bottom: 30px;
+        text-align: center;
+
+        &:last-of-type {
+          padding-bottom: 0;
+        }
+      }
 
       p {
-        padding-bottom: 33px;
         font-weight: bold;
-        font-size: 40px;
         color: #000000;
         letter-spacing: 0;
+        @include fluid(padding-bottom, 320px, 1600px, 20px, 33px);
+        @include fluid(font-size, 320px, 1600px, 30px, 40px);
       }
 
       span {
