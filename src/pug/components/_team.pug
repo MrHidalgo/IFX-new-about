@@ -1,0 +1,44 @@
+// SECTION team :: START
+
+section#a-team.a-team
+  .c-grid
+    .a-team__wrapper
+
+      p.a-team__title!= "Our Team of experts dedicated to your success"
+
+      .a-team__info
+        .a-team__info-col
+          p!= "Our Directors"
+          span!= "With numerous degrees and diplomas, the IFX directors have decades of practical experience and knowledge garnered from senior positions in international concerns. They constantly evaluate the evolution and expansion of IFX Brokers."
+
+        .a-team__info-col
+          p!= "Our account executives – The A-Team"
+          span!= "State-of-the-art automated systems ensure that our account executives are able to dedicate themselves to you. Whatever your concerns or queries, our A-team loves the challenge of making a plan come together. Whether it concerns funding your account, making withdrawals or just chatting about how to get the most from your account, you won’t find a more dedicated bunch anywhere!"
+
+        .a-team__info-col
+          p!= "Our sales executives"
+          span!= "Although the lion’s share of our business comes from client referrals, our expert sales team provides the personal touch. The team shares detailed information with you, so you make an informed, confident decision"
+
+      .a-team__slider
+
+        mixin swiperContent()
+          .swiper-slide
+            .swiper-slide-info
+              p!= "Pieter de Necker"
+              span!= "CEO"
+          .swiper-slide
+            .swiper-slide-info
+              p!= "Thula Ntumba"
+              span!= "Chairman"
+          .swiper-slide
+            .swiper-slide-info
+              p!= "Hannele Viljoen"
+              span!= "DIRECTOR"
+          .swiper-slide
+            .swiper-slide-info
+              p!= "Ian Lane"
+              span!= "REGULATORY AFFAIRS"
+
+        +swiper('swiper-container-team', 'swiperContent', false, true, false)
+
+// SECTION team :: END

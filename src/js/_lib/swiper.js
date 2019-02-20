@@ -7,11 +7,8 @@
  */
 const initSwiper = () => {
 
-  const mySwiper = new Swiper('.swiper-container', {
+  const mySwiperTeam = new Swiper('.swiper-container-team', {
     // Optional parameters
-    wrapperClass: "swiper-wrapper",
-    slideClass: "swiper-slide",
-    direction: 'horizontal', // 'horizontal' or 'vertical'
     loop: true,
     watchOverflow: true,
     normalizeSlideIndex: true,
@@ -35,38 +32,38 @@ const initSwiper = () => {
     // allowSwipeToPrev: true,
     // allowPageScroll: "auto ",
 
-    slidesPerView: 1,
-    spaceBetween: 0,
+    slidesPerView: 4,
+    spaceBetween: 30,
     breakpoints: {
       // when window width is <= 320px
       320: {
-        slidesPerView: 1,
-        spaceBetween: 10
+        // slidesPerView: 1,
+        // spaceBetween: 10
       },
       // when window width is <= 480px
       480: {
-        slidesPerView: 2,
-        spaceBetween: 20
+        // slidesPerView: 2,
+        // spaceBetween: 20
       },
       // when window width is <= 640px
       640: {
-        slidesPerView: 3,
-        spaceBetween: 30
+        // slidesPerView: 3,
+        // spaceBetween: 30
       }
     },
 
     // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-      // renderBullet: function (index, className) {
-      //   return `
-      //     <div class="${className}">
-      //       ${index}
-      //     </div>
-      //   `;
-      // }
-    },
+    // pagination: {
+    //   el: '.swiper-pagination',
+    //   clickable: true,
+    //   // renderBullet: function (index, className) {
+    //   //   return `
+    //   //     <div class="${className}">
+    //   //       ${index}
+    //   //     </div>
+    //   //   `;
+    //   // }
+    // },
 
     // Navigation arrows
     navigation: {
@@ -75,14 +72,14 @@ const initSwiper = () => {
     },
 
     // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
+    // scrollbar: {
+    //   el: '.swiper-scrollbar',
+    // },
 
-    on: {
-      "slideChange": function () {
-        console.log("slideChange");
-      },
-    }
+    // on: {
+    //   "slideChange": function () {
+    //     console.log("slideChange");
+    //   },
+    // }
   });
 };

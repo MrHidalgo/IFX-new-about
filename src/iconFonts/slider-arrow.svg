@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="18px" viewBox="0 0 12 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>slider-arrow</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="About-Us" transform="translate(-307.000000, -5237.000000)" fill="#FFFFFF">
+            <g id="Group-26" transform="translate(0.000000, 4332.000000)">
+                <g id="Group-13" transform="translate(280.000000, 713.000000)">
+                    <g id="Group-9" transform="translate(35.000000, 200.000000) scale(-1, 1) translate(-35.000000, -200.000000) translate(0.000000, 165.000000)">
+                        <path d="M36.4852814,30.2573593 L36.4852814,30 L39.4852814,30 L39.4852814,30.2573593 L39.7426407,30.2573593 L39.7426407,33.2573593 L39.4852814,33.2573593 L39.4852814,42 L36.4852814,42 L36.4852814,33.2573593 L27.7426407,33.2573593 L27.7426407,30.2573593 L36.4852814,30.2573593 Z" id="slider-arrow" transform="translate(34.000000, 36.000000) rotate(-315.000000) translate(-34.000000, -36.000000) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
