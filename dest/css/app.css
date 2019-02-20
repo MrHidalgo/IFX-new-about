@@ -870,25 +870,78 @@ picture {
   padding-top: 100px;
   padding-bottom: 95px;
   background-color: #212121;
+  padding-top: 75px;
+  padding-bottom: 65px;
 }
 
-/* line 9, src/scss/_components/_based.scss */
+@media screen and (min-width: 320px) {
+  /* line 3, src/scss/_components/_based.scss */
+  .a-based {
+    padding-top: -webkit-calc(75px + 25 * (100vw - 320px) / 1280);
+    padding-top: calc(75px + 25 * (100vw - 320px) / 1280);
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  /* line 3, src/scss/_components/_based.scss */
+  .a-based {
+    padding-top: 100px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  /* line 3, src/scss/_components/_based.scss */
+  .a-based {
+    padding-bottom: -webkit-calc(65px + 30 * (100vw - 320px) / 1280);
+    padding-bottom: calc(65px + 30 * (100vw - 320px) / 1280);
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  /* line 3, src/scss/_components/_based.scss */
+  .a-based {
+    padding-bottom: 95px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 3, src/scss/_components/_based.scss */
+  .a-based {
+    min-height: 0;
+  }
+}
+
+/* line 15, src/scss/_components/_based.scss */
 .a-based .c-grid {
   max-width: 1670px;
 }
 
-/* line 13, src/scss/_components/_based.scss */
+/* line 19, src/scss/_components/_based.scss */
 .a-based__title {
   padding-bottom: 20px;
   font-weight: bold;
-  font-size: 60px;
   color: #FFFFFF;
   letter-spacing: 0;
   text-align: center;
-  line-height: 1.66667;
+  font-size: 38px;
 }
 
-/* line 23, src/scss/_components/_based.scss */
+@media screen and (min-width: 320px) {
+  /* line 19, src/scss/_components/_based.scss */
+  .a-based__title {
+    font-size: -webkit-calc(38px + 22 * (100vw - 320px) / 1280);
+    font-size: calc(38px + 22 * (100vw - 320px) / 1280);
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  /* line 19, src/scss/_components/_based.scss */
+  .a-based__title {
+    font-size: 60px;
+  }
+}
+
+/* line 28, src/scss/_components/_based.scss */
 .a-based__text {
   width: 100%;
   max-width: 1120px;
@@ -902,7 +955,7 @@ picture {
   line-height: 1.44444;
 }
 
-/* line 37, src/scss/_components/_based.scss */
+/* line 42, src/scss/_components/_based.scss */
 .a-based__img img {
   display: block;
   max-width: 100%;

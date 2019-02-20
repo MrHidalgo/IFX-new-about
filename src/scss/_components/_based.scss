@@ -5,6 +5,12 @@
   padding-top: 100px;
   padding-bottom: 95px;
   background-color: #212121;
+  @include fluid(padding-top, 320px, 1600px, 75px, 100px);
+  @include fluid(padding-bottom, 320px, 1600px, 65px, 95px);
+
+  @include adaptive(767) {
+    min-height: 0;
+  }
 
   .c-grid {
     max-width: 1670px;
@@ -13,11 +19,10 @@
   &__title {
     padding-bottom: 20px;
     font-weight: bold;
-    font-size: 60px;
     color: #FFFFFF;
     letter-spacing: 0;
     text-align: center;
-    line-height: line-height-convert(100, 60);
+    @include fluid(font-size, 320px, 1600px, 38px, 60px);
   }
 
   &__text {
