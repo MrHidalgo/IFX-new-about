@@ -28,6 +28,17 @@
 		// ==========================================
 		initSwiper();
 
+		$('#fullpage').fullpage({
+			sectionSelector: '.fullpage-section',
+			scrollingSpeed: 700,
+			navigation: true,
+			fitToSection: true,
+			verticalCentered: true,
+			touchSensitivity: 10,
+			responsiveWidth: 768,
+			responsiveHeight: 750
+		});
+
 		// callback
 		// ==========================================
 	};

@@ -1,18 +1,21 @@
 // SECTION values :: START
 
 .a-values {
-  display: flex;
-  align-items: center;
-  min-height: 100vh;
   background-color: #F2F2F2;
-  @include fluid(padding-top padding-bottom, 320px, 1600px, 75px, 100px);
 
   @include adaptive(767) {
-    min-height: 0;
+    display: block !important;
+    height: auto !important;
+
+    > div {
+      height: auto !important;
+      @include fluid(padding-top, 320px, 767px, 75px, 100px);
+      @include fluid(padding-bottom, 320px, 767px, 75px, 100px);
+    }
   }
 
   .c-grid {
-    max-width: 1670px;
+    max-width: 1700px;
   }
 
   &__wrapper {

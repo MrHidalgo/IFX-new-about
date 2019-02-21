@@ -8,8 +8,9 @@ extends shared/_layout
 block content
   div.body(class!= pageClassName)
 
-    include ./components/_main
-    include ./components/_simple
-    include ./components/_values
-    include ./components/_based
-    include ./components/_team
+    #fullpage
+      include ./components/_main
+      include ./components/_simple
+      include ./components/_values
+      include ./components/_based
+      include ./components/_team

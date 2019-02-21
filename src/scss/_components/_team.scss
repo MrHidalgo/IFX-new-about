@@ -1,13 +1,43 @@
 // SECTION _t.scss :: START
 
 .a-team {
-  display: flex;
-  align-items: center;
-  min-height: 100vh;
-  @include fluid(padding-top padding-bottom, 320px, 1600px, 75px, 100px);
+  @include adaptive(767) {
+    display: block !important;
+    height: auto !important;
+
+    > div {
+      display: block;
+      height: auto !important;
+      @include fluid(padding-top, 320px, 767px, 75px, 100px);
+      @include fluid(padding-bottom, 320px, 767px, 75px, 100px);
+    }
+  }
 
   .c-grid {
-    max-width: 1670px;
+    @media screen and (min-height: 751px) {
+      overflow-y: auto;
+      height: 100%;
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+    @include adaptive(767) {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+
+  &__wrapper {
+    width: 100%;
+    max-width: 1700px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include adaptive(767) {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
   }
 
   &__title {

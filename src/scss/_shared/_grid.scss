@@ -2,7 +2,7 @@
 /// ADDITIONALLY
 /// ===============
 $maxWidth: 100%;
-$paddingLeft: 15px;
+$paddingLeft: 30px;
 $paddingRight: $paddingLeft;
 
 %grid {
@@ -11,6 +11,11 @@ $paddingRight: $paddingLeft;
   margin-left: auto;
   padding-right: $paddingRight;
   padding-left: $paddingLeft;
+
+  @include adaptive(767) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 
